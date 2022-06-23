@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="styles"/>
+    <body>
+        <referenceContainer name="content">
+            <uiComponent name="promolist_promotion_form"/>
+        </referenceContainer>
+    </body>
+</page>
+<!--<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">-->
+<!--<update handle="editor"/>-->
+<!--<body>-->
+<!--    <referenceContainer name="content">-->
+<!--        <block class="Marvelic\PromoLists\Block\Adminhtml\Promotion\Edit" name="marvelic_promotion_edit"/>-->
+<!--    </referenceContainer>-->
+<!--    <referenceContainer name="left">-->
+<!--        <block class="Marvelic\PromoLists\Block\Adminhtml\Promotion\Edit\Tabs" name="marvelic_promotion_tabs">-->
+<!--            <block class="Marvelic\PromoLists\Block\Adminhtml\Promotion\Edit\Tab\General" name="marvelic_promotion_general"/>-->
+<!--&lt;!&ndash;            <block class="Marvelic\PromoLists\Block\Adminhtml\Promotion\Edit\Tab\Meta" name="marvelic_promotion_meta"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <block class="Marvelic\PromoLists\Block\Adminhtml\Promotion\Edit\Tab\Products" name="marvelic_promotion_products"/>&ndash;&gt;-->
+<!--            <block class="Marvelic\PromoLists\Block\Adminhtml\Promotion\Edit\Tab\Coupons" name="marvelic_promotion_coupons"/>-->
+
+<!--            <action method="addTab">-->
+<!--                <argument name="name" xsi:type="string">general</argument>-->
+<!--                <argument name="block" xsi:type="string">marvelic_promotion_general</argument>-->
+<!--            </action>-->
+<!--            <action method="addTab">-->
+<!--                <argument name="name" xsi:type="string">meta</argument>-->
+<!--                <argument name="block" xsi:type="string">marvelic_promotion_meta</argument>-->
+<!--            </action>-->
+<!--&lt;!&ndash;            <action method="addTab">&ndash;&gt;-->
+<!--&lt;!&ndash;                <argument name="name" xsi:type="string">products</argument>&ndash;&gt;-->
+<!--&lt;!&ndash;                <argument name="block" xsi:type="string">marvelic_promotion_products</argument>&ndash;&gt;-->
+<!--&lt;!&ndash;            </action>&ndash;&gt;-->
+<!--            <action method="addTab">-->
+<!--                <argument name="name" xsi:type="string">coupons</argument>-->
+<!--                <argument name="block" xsi:type="string">marvelic_promotion_coupons</argument>-->
+<!--            </action>-->
+<!--        </block>-->
+<!--    </referenceContainer>-->
+<!--</body>-->
+<!--</page>-->

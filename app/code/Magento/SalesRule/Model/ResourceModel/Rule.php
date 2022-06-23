@@ -248,6 +248,7 @@ class Rule extends AbstractResource
     }
 
     /**
+    /**
      * Get all existing rule labels
      *
      * @param int $ruleId

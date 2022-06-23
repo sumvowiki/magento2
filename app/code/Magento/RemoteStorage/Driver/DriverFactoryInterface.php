@@ -9,17 +9,34 @@ namespace Magento\RemoteStorage\Driver;
 
 /**
  * Factory for drivers with additional configuration.
+ * @api
  */
 interface DriverFactoryInterface
 {
     /**
-     * Creates pre-configured driver.
+     * Creates driver from stored config.
      *
-     * @param array $config
-     * @param string $prefix
      * @return RemoteDriverInterface
      *
      * @throws DriverException
      */
-    public function create(array $config, string $prefix): RemoteDriverInterface;
+    public function create(): RemoteDriverInterface;
+
+    /**
+     * Creates driver from config.
+     *
+     * @param array $config
+     * @param string $prefix
+     * @param string $cacheAdapter
+     * @param array $cacheConfig
+     * @return RemoteDriverInterface
+     *
+     * @throws DriverException
+     */
+    public function createConfigured(
+        array $config,
+        string $prefix,
+        string $cacheAdapter = '',
+        array $cacheConfig = []
+    ): RemoteDriverInterface;
 }
